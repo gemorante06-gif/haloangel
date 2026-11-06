@@ -1,0 +1,503 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Halo Angel Camera Rental - Homepage</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="home_styles.css" />
+  </head>
+  <body>
+    <!-- Top Announcement / Banner Navigation -->
+    <header class="top-nav">
+      <div class="nav-container">
+        <div class="logo-brand">
+          <div class="logo-icon">
+            <img
+              src="image/OfficialLogo.png"
+              alt="Halo Angel Logo"
+              class="logo-img"
+            />
+          </div>
+          <span class="brand-name">Halo Angel Camera Rental</span>
+        </div>
+        <nav class="main-menu">
+          <a href="index.html" class="active">Home</a>
+          <a href="#featured">Products</a>
+          <a href="#quick-booking">Booking</a>
+          <a href="#about">Guidelines</a>
+        </nav>
+        <div class="user-actions">
+          <button class="search-btn">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+          <a href="login.html" class="login-link">Log In</a>
+          <a href="registration.html" class="signup-btn"
+            ><i class="fa-regular fa-user"></i
+          ></a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="hero-container">
+        <div class="hero-text">
+          <span class="badge">RENT IT, SNAP IT, LOVE IT</span>
+          <h1>Welcome to Halo Angel Camera Rental.</h1>
+          <p>
+            Rent high-quality cameras and gear for your photoshoots, vlogging,
+            and special events. Hassle-free booking, door-to-door delivery
+            within Laguna.
+          </p>
+          <div class="hero-buttons">
+            <a href="#quick-booking" class="btn btn-primary"
+              >Book a camera <i class="fa-solid fa-arrow-right"></i
+            ></a>
+            <a href="#featured" class="btn btn-secondary"
+              >Explore models <i class="fa-solid fa-chevron-right"></i
+            ></a>
+          </div>
+        </div>
+        <div class="hero-image-wrapper">
+          <img
+            src="image/SONY ZVE10.png"
+            alt="Featured Camera - Sony ZV-E10"
+            class="hero-img"
+          />
+          <div class="hero-card-tag">
+            <div class="tag-details">
+              <strong>Sony ZV-E10</strong>
+              <span>Vlog Camera with 16-50mm Lens Kit</span>
+            </div>
+            <a href="#quick-booking" class="tag-link"
+              >Rent now <i class="fa-solid fa-arrow-right"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Feature Highlights Ribbon -->
+    <section class="ribbon-features">
+      <div class="ribbon-container">
+        <div class="feature-item">
+          <i class="fa-solid fa-shield-halved"></i>
+          <div>
+            <h4>KYC Verification</h4>
+            <p>Secure identity & document check</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <i class="fa-solid fa-truck-fast"></i>
+          <div>
+            <h4>Fast Delivery</h4>
+            <p>Door-to-door in Laguna area</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <i class="fa-solid fa-qrcode"></i>
+          <div>
+            <h4>Instant QR Guides</h4>
+            <p>Scan for camera instructions</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <i class="fa-solid fa-calendar-check"></i>
+          <div>
+            <h4>Real-Time Schedule</h4>
+            <p>Transparent live calendar check</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Cameras Section -->
+    <section id="featured" class="featured-section">
+      <div class="section-container">
+        <div class="section-header">
+          <div>
+            <span class="sub-heading">POPULAR UNITS</span>
+            <h2>Featured cameras.</h2>
+          </div>
+          <a href="#" class="view-all"
+            >View all 6 units <i class="fa-solid fa-arrow-right"></i
+          ></a>
+        </div>
+
+        <!-- Filter Tabs -->
+        <div class="filter-tabs">
+          <button class="tab-btn active">All models</button>
+          <button class="tab-btn">Sony</button>
+          <button class="tab-btn">DJI</button>
+          <button class="tab-btn">Insta360</button>
+          <button class="tab-btn">Fujifilm</button>
+          <button class="tab-btn">Instant</button>
+        </div>
+
+        <!-- Product Grid -->
+        <div class="product-grid">
+          <!-- Card 1 -->
+          <div class="product-card">
+            <span class="card-badge">VLOGGING</span>
+            <div class="card-img-box">
+              <img src="image/SONY ZVE10.png" alt="Sony ZV-E10" />
+            </div>
+            <div class="card-body">
+              <span class="brand-tag">SONY SERIES</span>
+              <h3>Sony ZV-E10</h3>
+              <p>
+                4K Mirrorless Vlog Camera with interchangeable lenses and
+                directional mic.
+              </p>
+              <div class="card-footer">
+                <span class="price">₱500 <span>/ day</span></span>
+                <a href="#quick-booking" class="rent-btn"
+                  >Rent model <i class="fa-solid fa-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="product-card">
+            <span class="card-badge">COMPACT</span>
+            <div class="card-img-box">
+              <img src="image/POCKET3.png" alt="DJI Osmo Pocket 3" />
+            </div>
+            <div class="card-body">
+              <span class="brand-tag">DJI GIMBAL</span>
+              <h3>DJI Osmo Pocket 3</h3>
+              <p>
+                1-inch CMOS pocket gimbal camera with 4K/120fps video
+                capability.
+              </p>
+              <div class="card-footer">
+                <span class="price">₱700 <span>/ day</span></span>
+                <a href="#quick-booking" class="rent-btn"
+                  >Rent model <i class="fa-solid fa-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="product-card">
+            <span class="card-badge">ACTION</span>
+            <div class="card-img-box">
+              <img src="image/ACTIONPOCKET4.png" alt="DJI Osmo Action 4" />
+            </div>
+            <div class="card-body">
+              <span class="brand-tag">DJI ACTION</span>
+              <h3>DJI Osmo Action 4</h3>
+              <p>
+                Waterproof 4K action camera with dual touchscreens and extreme
+                battery.
+              </p>
+              <div class="card-footer">
+                <span class="price">₱600 <span>/ day</span></span>
+                <a href="#quick-booking" class="rent-btn"
+                  >Rent model <i class="fa-solid fa-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="product-card">
+            <span class="card-badge">360 DEGREE</span>
+            <div class="card-img-box">
+              <img src="image/X360.png" alt="Insta360 X5" />
+            </div>
+            <div class="card-body">
+              <span class="brand-tag">INSTA360</span>
+              <h3>Insta360 X5</h3>
+              <p>
+                8K 360-degree action capture with invisible selfie stick
+                reframing.
+              </p>
+              <div class="card-footer">
+                <span class="price">₱850 <span>/ day</span></span>
+                <a href="#quick-booking" class="rent-btn"
+                  >Rent model <i class="fa-solid fa-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="product-card">
+            <span class="card-badge">HYBRID INSTANT</span>
+            <div class="card-img-box">
+              <img src="image/MINIEVO.png" alt="Fujifilm Instax Mini Evo" />
+            </div>
+            <div class="card-body">
+              <span class="brand-tag">FUJIFILM</span>
+              <h3>Fujifilm Instax Mini Evo</h3>
+              <p>
+                Hybrid instant camera with 100 focal & lens effect combinations.
+              </p>
+              <div class="card-footer">
+                <span class="price">₱450 <span>/ day</span></span>
+                <a href="#quick-booking" class="rent-btn"
+                  >Rent model <i class="fa-solid fa-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="product-card">
+            <span class="card-badge">SQUARE FILM</span>
+            <div class="card-img-box">
+              <img src="image/SQ6.png" alt="Fujifilm Instax Square SQ6" />
+            </div>
+            <div class="card-body">
+              <span class="brand-tag">FUJIFILM</span>
+              <h3>Fujifilm Instax Square SQ6</h3>
+              <p>
+                Analog square format instant camera with flash color filters
+                included.
+              </p>
+              <div class="card-footer">
+                <span class="price">₱400 <span>/ day</span></span>
+                <a href="#quick-booking" class="rent-btn"
+                  >Rent model <i class="fa-solid fa-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quick Booking Snapshot Section -->
+    <section id="quick-booking" class="booking-section">
+      <div class="section-container">
+        <span class="sub-heading">EXPRESS BOOKING</span>
+        <h2>Quick booking snapshot.</h2>
+
+        <div class="booking-wrapper">
+          <!-- Form Column -->
+          <div class="booking-form-card">
+            <form class="quick-form">
+              <div class="form-group">
+                <label
+                  ><i class="fa-solid fa-camera"></i> Choose your camera</label
+                >
+                <select required>
+                  <option value="" disabled selected>
+                    Select a camera model...
+                  </option>
+                  <option value="sony-zve10">Sony ZV-E10 (₱500/day)</option>
+                  <option value="dji-pocket3">
+                    DJI Osmo Pocket 3 (₱700/day)
+                  </option>
+                  <option value="dji-action4">
+                    DJI Osmo Action 4 (₱600/day)
+                  </option>
+                  <option value="insta360-x5">Insta360 X5 (₱850/day)</option>
+                  <option value="instax-evo">
+                    Fujifilm Instax Mini Evo (₱450/day)
+                  </option>
+                  <option value="instax-sq6">
+                    Fujifilm Instax Square SQ6 (₱400/day)
+                  </option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label
+                  ><i class="fa-regular fa-calendar-days"></i> Pick your
+                  dates</label
+                >
+                <div class="date-inputs">
+                  <input type="date" placeholder="Start date" required />
+                  <input type="date" placeholder="Return date" required />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label
+                  ><i class="fa-regular fa-id-card"></i> Account &
+                  Verification</label
+                >
+                <input type="text" placeholder="Full Name" required />
+                <input type="tel" placeholder="Phone Number" required />
+                <textarea
+                  placeholder="Delivery Address in Calamba/Laguna Area..."
+                  rows="3"
+                  required
+                ></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-full">
+                Submit Request <i class="fa-solid fa-paper-plane"></i>
+              </button>
+            </form>
+          </div>
+
+          <!-- How It Works Guide Box -->
+          <div class="booking-guide-card">
+            <span class="guide-tag">THE PROCESS</span>
+            <h3>How it works.</h3>
+            <p>
+              Getting your rental camera is quick and straightforward. Follow
+              these simple steps:
+            </p>
+
+            <ol class="steps-list">
+              <li>
+                <strong>Choose a camera</strong>
+                <span
+                  >Pick your ideal model and check calendar date
+                  availability.</span
+                >
+              </li>
+              <li>
+                <strong>KYC Identification Check</strong>
+                <span
+                  >Submit a valid government ID or student ID for
+                  screening.</span
+                >
+              </li>
+              <li>
+                <strong>50% Downpayment & Delivery</strong>
+                <span
+                  >Pay 50% deposit to lock booking; remaining balance upon door
+                  delivery.</span
+                >
+              </li>
+            </ol>
+
+            <div class="coverage-box">
+              <strong>Coverage Area:</strong>
+              <div class="chips">
+                <span class="chip">Calamba</span>
+                <span class="chip">Palo Alto</span>
+                <span class="chip">Los Baños</span>
+                <span class="chip">Cabuyao</span>
+                <span class="chip">Santa Rosa</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Guidelines & Info Section -->
+    <section id="about" class="info-section">
+      <div class="section-container info-grid">
+        <div class="info-image-box">
+          <img src="image/SamplePictures.jpg" alt="Lipa, Batangas" />
+          <div class="location-badge">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>Lipa, Batangas</span>
+          </div>
+        </div>
+
+        <div class="info-content">
+          <span class="sub-heading">GUIDELINES AND ABOUT</span>
+          <h2>Guidelines, booking, and about.</h2>
+          <p>
+            Ensure a smooth rental experience by reviewing our store guidelines
+            and safety protocols prior to reservation.
+          </p>
+
+          <ul class="info-list">
+            <li>
+              <i class="fa-solid fa-id-badge"></i>
+              <div>
+                <strong>KYC Verification</strong>
+                <span
+                  >Valid government ID or valid school ID is required for
+                  first-time renters.</span
+                >
+              </div>
+            </li>
+            <li>
+              <i class="fa-solid fa-shield-cat"></i>
+              <div>
+                <strong>Gear Protection</strong>
+                <span
+                  >All cameras come equipped with protective cases and memory
+                  cards.</span
+                >
+              </div>
+            </li>
+            <li>
+              <i class="fa-solid fa-truck-ramp-box"></i>
+              <div>
+                <strong>Pickup & Delivery</strong>
+                <span
+                  >Meetup points available at Palo Alto, Calamba or direct
+                  delivery.</span
+                >
+              </div>
+            </li>
+          </ul>
+
+          <a href="#quick-booking" class="btn btn-secondary"
+            >Read full terms <i class="fa-solid fa-arrow-right"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Banner -->
+    <section class="cta-banner">
+      <div class="cta-container">
+        <div>
+          <span class="cta-sub">NEED A CUSTOM PACKAGE?</span>
+          <h2>Request a custom quote.</h2>
+        </div>
+        <a href="#quick-booking" class="btn btn-light"
+          >Request a quote <i class="fa-solid fa-arrow-right"></i
+        ></a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+      <div class="footer-container">
+        <div class="footer-brand">
+          <div class="logo-brand">
+            <div class="logo-icon">
+              <i class="fa-solid fa-camera-retro"></i>
+            </div>
+            <span class="brand-name">Halo Angel Camera Rental</span>
+          </div>
+          <p>Palo Alto, Calamba, Laguna<br />Philippines</p>
+          <p class="copyright">
+            © 2026 Halo Angel Camera Rental. All rights reserved.
+          </p>
+        </div>
+
+        <div class="footer-links">
+          <div class="link-col">
+            <h4>Services</h4>
+            <a href="#featured">Camera Rental</a>
+            <a href="#featured">Accessories</a>
+            <a href="#featured">Delivery</a>
+          </div>
+          <div class="link-col">
+            <h4>About</h4>
+            <a href="#about">About Us</a>
+            <a href="#about">How it works</a>
+            <a href="#about">Terms & Guidelines</a>
+          </div>
+          <div class="link-col">
+            <h4>Software</h4>
+            <a href="login.html">Log In</a>
+            <a href="registration.html">Register</a>
+            <a href="#quick-booking">KYC Form</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

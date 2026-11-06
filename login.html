@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Log In - Halo Angel Camera Rental</title>
+    <link rel="stylesheet" href="login-styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Top Header Navigation -->
+    <header class="top-nav">
+      <div class="nav-container">
+        <a href="index.html" class="logo-brand">
+          <div class="logo-icon"><i class="fa-solid fa-camera-retro"></i></div>
+          <span class="brand-name">Halo Angel Camera Rental</span>
+        </a>
+
+        <nav class="main-menu">
+          <a href="index.html#featured">Explore cameras</a>
+          <a href="index.html#quick-booking">Rentals</a>
+          <a href="index.html#about">About</a>
+          <a href="#help">Help</a>
+        </nav>
+
+        <div class="user-actions">
+          <button class="search-btn">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+          <a href="login.html" class="login-link active">Log in</a>
+          <a href="index.html#quick-booking" class="cart-btn"
+            ><i class="fa-solid fa-bag-shopping"></i> <span>0</span></a
+          >
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Login Grid Container -->
+    <main class="login-page-container">
+      <!-- Left Hero Brand Panel -->
+      <section class="left-hero-panel">
+        <div class="hero-header-badge">
+          <i class="fa-solid fa-location-dot"></i>
+          <span>PALO ALTO, CALAMBA, LAGUNA</span>
+        </div>
+
+        <div class="hero-title-group">
+          <h1>Your next shot.<br />Starts here.</h1>
+          <p>
+            A familiar setup. A fresh idea. Log in to Halo Angel Camera Rental
+            and pick up where your inspiration left off.
+          </p>
+        </div>
+
+        <!-- Featured Camera Card Preview -->
+        <div class="camera-card-preview">
+          <div class="camera-img-box">
+            <img src="image/POCKET3.png" alt="DJI Osmo Pocket 3" />
+          </div>
+          <div class="card-caption">
+            <div class="caption-text">
+              <h3>DJI Osmo Pocket 3</h3>
+              <p>
+                A little inspiration for your next shoot in Palo Alto, Calamba,
+                Laguna.
+              </p>
+            </div>
+            <a href="index.html#featured" class="view-gear-btn"
+              >View gear <i class="fa-solid fa-arrow-up-right-from-square"></i
+            ></a>
+          </div>
+        </div>
+
+        <!-- Guarantee Tag -->
+        <div class="guarantee-tag">
+          <div class="check-icon">
+            <i class="fa-regular fa-circle-check"></i>
+          </div>
+          <div class="guarantee-info">
+            <strong>Ready for your next shoot.</strong>
+            <span>Halo Angel Camera Rental in Palo Alto, Calamba, Laguna.</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Right Login Form Panel -->
+      <section class="right-form-panel">
+        <div class="form-wrapper">
+          <span class="sub-badge">SECURE ACCESS</span>
+          <h2>Log in to Halo Angel.</h2>
+          <p class="form-description">
+            Log in to Halo Angel Camera Rental to manage your rentals and find
+            your next setup.
+          </p>
+
+          <form class="login-form">
+            <div class="input-group">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                placeholder="you@example.com"
+                required
+              />
+            </div>
+
+            <div class="input-group">
+              <label for="password">Password</label>
+              <div class="password-input-wrapper">
+                <input
+                  type="password"
+                  id="password"
+                  placeholder="Enter password"
+                  required
+                />
+                <button type="button" class="toggle-password">
+                  <i class="fa-regular fa-eye"></i>
+                </button>
+              </div>
+            </div>
+
+            <div class="form-options">
+              <label class="remember-me">
+                <input type="checkbox" />
+                <span>Remember me</span>
+              </label>
+              <a href="#" class="forgot-pass">Forgot password?</a>
+            </div>
+
+            <button type="submit" class="submit-btn">
+              Log in <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </form>
+
+          <div class="form-footer-links">
+            <p>
+              New to Halo Angel?
+              <a href="registration.html" class="create-account-link"
+                >Create an account
+                <i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </p>
+            <p class="help-text">
+              Need help signing in? Our team is here to help.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Bottom Page Footer -->
+    <footer class="login-footer">
+      <div class="footer-inner">
+        <span class="copyright"
+          >© 2026 Halo Angel Camera Rental. Palo Alto, Calamba, Laguna.</span
+        >
+        <div class="footer-nav">
+          <a href="#">Privacy policy</a>
+          <a href="#">Rental terms</a>
+          <a href="#"
+            >Need a hand? Contact us
+            <i class="fa-solid fa-arrow-up-right-from-square"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
