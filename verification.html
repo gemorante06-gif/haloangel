@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Identity verification - Halo Angel Camera Rental</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="ver-body">
+
+    <header class="navbar">
+        <div class="logo">
+            <img src="media/Official logo.png" alt="Halo Angel Logo" class="logo-img">
+            <span>Halo Angel Camera Rental</span>
+        </div>
+        <nav class="nav-links">
+            <a href="index.html">Catalog</a>
+            <a href="#">Booking</a>
+            <a href="verification.html" class="active">Account</a>
+            <a href="#">Guidelines</a>
+        </nav>
+        <div class="nav-actions">
+            <button class="icon-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+            <a href="#" class="auth-link">My account</a>
+            <button class="cart-btn"><i class="fa-solid fa-bag-shopping"></i> <span>0</span></button>
+        </div>
+    </header>
+
+    <main class="ver-container">
+        <div class="ver-breadcrumb">Home / Account / Identity verification</div>
+        
+        <div class="ver-top-intro">
+            <span class="sub-heading">BEFORE YOUR RENTAL</span>
+            <h1 class="page-title">Let’s get to know you.</h1>
+            <p class="subtitle">Prepare your contact details and identity documents for verification. All four steps are shown below so you know what to expect before you begin.</p>
+        </div>
+
+        <div class="ver-main-grid">
+            
+            <aside class="ver-sidebar">
+                <div class="ver-sidebar-card">
+                    <span class="ver-badge-sub">Not submitted</span>
+                    <h3 class="ver-sidebar-title">Your verification checklist.</h3>
+                    <ul class="ver-steps-list">
+                        <li class="ver-step-item active">
+                            <span class="ver-num">1</span>
+                            <span>Contact information</span>
+                        </li>
+                        <li class="ver-step-item">
+                            <span class="ver-num">2</span>
+                            <span>Government-issued ID</span>
+                        </li>
+                        <li class="ver-step-item">
+                            <span class="ver-num">3</span>
+                            <span>Proof of address</span>
+                        </li>
+                        <li class="ver-step-item">
+                            <span class="ver-num">4</span>
+                            <span>Review & consent</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <a href="#" class="ver-side-back">Back to my account <i class="fa-solid fa-arrow-up-right-from-square fa-rotate-270" style="font-size: 0.75rem;"></i></a>
+            </aside>
+
+            <div class="ver-form-content">
+                <form class="ver-form">
+                    
+                    <section class="ver-section-box">
+                        <span class="ver-step-tag">STEP 01</span>
+                        <h2 class="ver-sec-title">Contact information</h2>
+                        <p class="ver-sec-desc">Enter your legal name exactly as it appears on your government-issued ID.</p>
+
+                        <div class="ver-form-row">
+                            <div class="ver-field">
+                                <label>First name *</label>
+                                <input type="text" placeholder="Enter legal first name" required>
+                            </div>
+                            <div class="ver-field">
+                                <label>Last name *</label>
+                                <input type="text" placeholder="Enter legal last name" required>
+                            </div>
+                        </div>
+
+                        <div class="ver-form-row">
+                            <div class="ver-field">
+                                <label>Email address *</label>
+                                <input type="email" placeholder="Enter email address" required>
+                            </div>
+                            <div class="ver-field">
+                                <label>Mobile number *</label>
+                                <input type="text" placeholder="Enter mobile number" required>
+                            </div>
+                        </div>
+
+                        <div class="ver-field" style="max-width: 100%;">
+                            <label>Date of birth *</label>
+                            <input type="text" placeholder="MM / DD / YYYY" required>
+                        </div>
+
+                        <div class="ver-action-row">
+                            <a href="#" class="ver-btn-outline">Back to account <i class="fa-solid fa-arrow-up-right-from-square fa-rotate-270" style="font-size: 0.75rem;"></i></a>
+                            <button type="button" class="ver-btn-purple">Continue to ID <i class="fa-solid fa-arrow-up-right-from-square fa-rotate-45" style="font-size: 0.75rem;"></i></button>
+                        </div>
+                    </section>
+
+                    <section class="ver-section-box">
+                        <span class="ver-step-tag">STEP 02</span>
+                        <h2 class="ver-sec-title">Government-issued ID</h2>
+                        <p class="ver-sec-desc">Prepare a valid government-issued ID. Accepted ID types and verification requirements are to be confirmed.</p>
+
+                        <div class="ver-form-row">
+                            <div class="ver-field">
+                                <label>ID type *</label>
+                                <select required>
+                                    <option value="">Select government-issued ID</option>
+                                    <option value="passport">Philippine Passport</option>
+                                    <option value="drivers">Driver's License</option>
+                                    <option value="national">National ID</option>
+                                </select>
+                            </div>
+                            <div class="ver-field">
+                                <label>ID number *</label>
+                                <input type="text" placeholder="Enter the number on your ID" required>
+                            </div>
+                        </div>
+
+                        <div class="ver-upload-grid">
+                            <div class="ver-upload-card">
+                                <i class="fa-solid fa-cloud-arrow-up"></i>
+                                <strong>Front of ID *</strong>
+                                <span>Show the full front, with all four corners visible.</span>
+                                <a href="#" class="ver-upload-link">Choose file <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.7rem;"></i></a>
+                            </div>
+                            <div class="ver-upload-card">
+                                <i class="fa-solid fa-cloud-arrow-up"></i>
+                                <strong>Back of ID *</strong>
+                                <span>Show the full reverse, without glare or blur.</span>
+                                <a href="#" class="ver-upload-link">Choose file <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.7rem;"></i></a>
+                            </div>
+                        </div>
+
+                        <p class="ver-hint-text">Suggested upload format: JPG, PNG, or PDF, up to 10 MB per file. Guidance is illustrative; final limits are to be confirmed. No files selected.</p>
+
+                        <div class="ver-action-row">
+                            <a href="#" class="ver-btn-outline">Back <i class="fa-solid fa-arrow-up-right-from-square fa-rotate-270" style="font-size: 0.75rem;"></i></a>
+                            <button type="button" class="ver-btn-purple">Continue to address <i class="fa-solid fa-arrow-up-right-from-square fa-rotate-45" style="font-size: 0.75rem;"></i></button>
+                        </div>
+                    </section>
+
+                  
+                    <section class="ver-section-box">
+                        <span class="ver-step-tag">STEP 03</span>
+                        <h2 class="ver-sec-title">Proof of address</h2>
+                        <p class="ver-sec-desc">Provide your current residential address and a document showing your name and address. Accepted documents and recency requirements are to be confirmed.</p>
+
+                        <div class="ver-field">
+                            <label>House / unit, street, and barangay *</label>
+                            <input type="text" placeholder="Enter your residential address" required>
+                        </div>
+
+                        <div class="ver-form-row-3">
+                            <div class="ver-field">
+                                <label>City / municipality *</label>
+                                <input type="text" placeholder="Enter city" required>
+                            </div>
+                            <div class="ver-field">
+                                <label>Province *</label>
+                                <input type="text" placeholder="Enter province" required>
+                            </div>
+                            <div class="ver-field">
+                                <label>Postal code *</label>
+                                <input type="text" placeholder="Enter postal code" required>
+                            </div>
+                        </div>
+
+                        <div class="ver-field">
+                            <label>Document type *</label>
+                            <select required>
+                                <option value="">Select proof of address document</option>
+                                <option value="utility">Utility Bill</option>
+                                <option value="bank">Bank Statement</option>
+                            </select>
+                        </div>
+
+                        <div class="ver-upload-card ver-full-upload">
+                            <i class="fa-solid fa-cloud-arrow-up"></i>
+                            <strong>Upload proof of address *</strong>
+                            <span>Use a readable utility bill, bank statement, or other document, subject to acceptance. No file selected.</span>
+                            <a href="#" class="ver-upload-link">Choose file <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.7rem;"></i></a>
+                        </div>
+
+                        <div class="ver-action-row">
+                            <a href="#" class="ver-btn-outline">Back <i class="fa-solid fa-arrow-up-right-from-square fa-rotate-270" style="font-size: 0.75rem;"></i></a>
+                            <button type="button" class="ver-btn-purple">Continue to review <i class="fa-solid fa-arrow-up-right-from-square fa-rotate-45" style="font-size: 0.75rem;"></i></button>
+                        </div>
+                    </section>
+
+                    <section class="ver-section-box">
+                        <span class="ver-step-tag">STEP 04</span>
+                        <h2 class="ver-sec-title">Review & consent</h2>
+                        <p class="ver-sec-desc">Check each section before requesting verification. Your booking is not approved by completing this form.</p>
+
+                        <div class="ver-review-list">
+                            <div class="ver-review-row">
+                                <span>Contact information</span>
+                                <span class="ver-rev-status">Not entered · <strong>Edit <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.65rem;"></i></strong></span>
+                            </div>
+                            <div class="ver-review-row">
+                                <span>Government-issued ID</span>
+                                <span class="ver-rev-status">Front and back not uploaded · <strong>Edit <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.65rem;"></i></strong></span>
+                            </div>
+                            <div class="ver-review-row">
+                                <span>Proof of address</span>
+                                <span class="ver-rev-status">Not uploaded · <strong>Edit <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.65rem;"></i></strong></span>
+                            </div>
+                        </div>
+
+                        <p class="ver-privacy-text">Privacy notice: identity and address information would be used to assess rental eligibility. The approved privacy policy, retention period, and contact for privacy requests are to be confirmed before collection.</p>
+
+                        <div class="ver-check-group">
+                            <input type="checkbox" id="chk1" required>
+                            <label for="chk1">I confirm that the information I provide is accurate and that these documents belong to me.</label>
+                        </div>
+                        <div class="ver-check-group">
+                            <input type="checkbox" id="chk2" required>
+                            <label for="chk2">I have read the privacy notice and consent to the use of my information for identity verification, subject to the final privacy policy.</label>
+                        </div>
+
+                        <div class="ver-action-row">
+                            <a href="#" class="ver-btn-outline">Back <i class="fa-solid fa-arrow-up-right-from-square fa-rotate-270" style="font-size: 0.75rem;"></i></a>
+                            <button type="submit" class="ver-btn-purple">Request verification <i class="fa-solid fa-arrow-up-right-from-square fa-rotate-45" style="font-size: 0.75rem;"></i></button>
+                        </div>
+                        <p class="ver-required-note">Required fields are marked *. Static design only; nothing is submitted.</p>
+                    </section>
+
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <div class="cta-banner">
+        <div>
+            <div class="sub-heading dark-sub">READY FOR YOUR NEXT SHOOT?</div>
+            <h2>Request a quote.</h2>
+        </div>
+        <button class="btn-quote inline-btn">Request a quote <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <h3>Halo Angel Camera Rental</h3>
+                <p>Sony, DJI, Insta360, and Instax rentals.<br>Palo Alto, Calamba, Laguna.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Explore</h4>
+                <a href="index.html">Catalog</a>
+                <a href="#">Booking</a>
+                <a href="verification.html">Account</a>
+                <a href="#">Guidelines</a>
+            </div>
+            <div class="footer-links">
+                <h4>About</h4>
+                <a href="#">About Halo Angel</a>
+                <a href="#">Palo Alto, Calamba, Laguna</a>
+                <a href="#">Contact</a>
+            </div>
+            <div class="footer-links">
+                <h4>Pathways</h4>
+                <a href="verification.html">Identity verification</a>
+                <a href="#">Booking status</a>
+                <a href="#">Camera instructions</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>© 2026 Halo Angel Camera Rental. Palo Alto, Calamba, Laguna.</span>
+            <div class="legal-links">
+                <a href="#">Privacy policy</a>
+                <a href="#">Guidelines</a>
+                <a href="#">About</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
