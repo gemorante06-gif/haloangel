@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en" class="rental-page">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking - Halo Angel Camera Rental</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="rental-page book-body">
+
+    <header class="navbar">
+        <div class="logo">
+            <img src="image/OfficialLogo.png" alt="Halo Angel Logo" class="logo-img">
+            <span>Halo Angel Camera Rental</span>
+        </div>
+        <nav class="nav-links">
+            <a href="catalog.html">Catalog</a>
+            <a href="booking.html" class="active">Booking</a>
+            <a href="customer_dashboard.html">Account</a>
+            <a href="customer_guidelines.html">Guidelines</a>
+        </nav>
+        <div class="nav-actions">
+            <a class="icon-btn" href="catalog.html#searchInput" aria-label="Search cameras"><i class="fa-solid fa-magnifying-glass"></i></a>
+            <a href="login.html" class="auth-link">Log in</a>
+            <a href="registration.php" class="auth-link">Register</a>
+            <a href="#bookingMainForm" class="cart-btn rental-bag-link" aria-label="Rental bag and booking"><img class="rental-bag-icon" src="image/shopping-bag.png" alt=""> <span>Rental bag</span></a>
+        </div>
+    </header>
+
+    <main class="book-container">
+        <div class="book-breadcrumb">Home / Booking</div>
+        
+        <div class="book-top-intro">
+            <span class="sub-heading">PLAN YOUR NEXT RENTAL</span>
+            <h1 class="page-title">Good gear. Your dates.</h1>
+            <p class="subtitle">Choose your camera and preferred rental window. Send a rental request so the team can confirm availability, kit inclusions, and a quote. Equipment includes Sony ZV-E10, DJI Osmo Pocket 3 Creator Combo, DJI Osmo Action 4, Insta360 X5, Instax Mini Evo, and Instax SQ6.</p>
+        </div>
+
+        <div class="book-step-nav">
+            <span class="book-step-tab active">01 Camera & dates</span>
+            <span class="book-step-tab">02 Rental details</span>
+            <span class="book-step-tab">03 Request & review</span>
+        </div>
+
+        <form id="bookingMainForm" class="book-main-grid" action="process-booking.php" method="POST">
+            
+            <div class="book-form-left">
+                <section class="book-section">
+                    <h2 class="book-sec-title">01 / Camera & dates</h2>
+                    
+                    <div class="book-field">
+                        <label>Equipment *</label>
+                        <select id="equipSelect" name="equipment" required>
+                            <option value="Sony ZV-E10" data-t1="549" data-t2="499" data-t3="449" data-kit="Unit, lanyard, silicone cover, charger, bag, 64 GB card" data-img="image/SONY ZVE10.png">Sony ZV-E10</option>
+                            <option value="DJI Osmo Pocket 3 Creator Combo" data-t1="549" data-t2="499" data-t3="449" data-kit="Pocket 3, protective cover, handle, mini tripod, wrist strap" data-img="image/POCKET3.png">DJI Osmo Pocket 3 Creator Combo</option>
+                            <option value="DJI Osmo Action 4" data-t1="499" data-t2="449" data-t3="399" data-kit="Action 4, battery, frame guard, quick-release adapter, curved base" data-img="image/ACTIONPOCKET4.png">DJI Osmo Action 4</option>
+                            <option value="Insta360 X5" data-t1="549" data-t2="499" data-t3="449" data-kit="Insta360 X5 unit, battery, protective pouch, Type-C cable" data-img="image/X360.png">Insta360 X5</option>
+                            <option value="Fujifilm Instax Mini Evo" data-t1="299" data-t2="249" data-kit="Instax Mini Evo camera, tempered glass, clear case, lens, protector, lanyard" data-img="image/MINIEVO.png">Fujifilm Instax Mini Evo</option>
+                            <option value="Fujifilm Instax SQ6" data-t1="299" data-t2="249" data-kit="Instax SQ6, lanyard" data-img="image/SQ6.png">Fujifilm Instax SQ6</option>
+                        </select>
+                        <small class="book-subtext">Also explore DJI Osmo Pocket 3 Creator Combo, DJI Osmo Action 4, Insta360 X5, Instax Mini Evo, and Instax SQ6 in the catalog.</small>
+                    </div>
+
+                    <div class="book-calendar-box">
+                        <div class="book-cal-header">
+                            <span id="currentMonthYear" class="book-cal-month">November 2026</span>
+                            <div class="book-cal-arrows">
+                                <button type="button" class="cal-nav-btn" id="prevMonthBtn">&lt;</button>
+                                <button type="button" class="cal-nav-btn" id="nextMonthBtn">&gt;</button>
+                            </div>
+                        </div>
+                        
+                        <div class="book-cal-weekdays">
+                            <span>Sun</span><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span>
+                        </div>
+
+                        <div class="book-cal-days-grid" id="calendarGrid"></div>
+
+                        <div class="book-cal-legend">
+                            <span><i class="legend-dot avail"></i> Available</span>
+                            <span><i class="legend-dot unavail"></i> Unavailable</span>
+                            <span><i class="legend-dot select"></i> Selected</span>
+                        </div>
+                    </div>
+
+            
+                    <div class="book-form-row">
+                        <div class="book-field">
+                            <label>Pickup date *</label>
+                            <input type="text" id="pickupDate" name="pickup_date" placeholder="Select pickup date" required readonly>
+                        </div>
+                        <div class="book-field">
+                            <label>Return date *</label>
+                            <input type="text" id="returnDate" name="return_date" placeholder="Select return date" required readonly>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="book-section">
+                    <h2 class="book-sec-title">02 / Make your kit</h2>
+                    <p class="book-sec-desc">The confirmed gear kit is included at no extra charge. Optionally request add-ons below — these are unpriced proposals; availability, charges, and final inclusions are to be confirmed by the team.</p>
+
+                    <div class="book-addons-grid">
+                        <label class="book-checkbox-card">
+                            <input type="checkbox" class="addon-chk" name="addons[]" value="Extra battery"> Extra battery (optional, unpriced)
+                        </label>
+                        <label class="book-checkbox-card">
+                            <input type="checkbox" class="addon-chk" name="addons[]" value="Additional memory card"> Additional memory card (optional, unpriced)
+                        </label>
+                        <label class="book-checkbox-card">
+                            <input type="checkbox" class="addon-chk" name="addons[]" value="Tripod"> Tripod (optional, unpriced)
+                        </label>
+                        <label class="book-checkbox-card">
+                            <input type="checkbox" class="addon-chk" name="addons[]" value="Other accessories"> Other accessories (optional, unpriced)
+                        </label>
+                    </div>
+
+                    <div class="book-field" style="margin-top: 20px;">
+                        <label>Shoot details & notes</label>
+                        <textarea name="notes" rows="4" placeholder="Tell us about your shoot, preferred accessories, or questions."></textarea>
+                    </div>
+                </section>
+
+                <section class="book-section">
+                    <h2 class="book-sec-title">Pickup & return</h2>
+                    <p class="book-sec-desc">Local coordination in Palo Alto, Calamba, Laguna. Exact handover location and times are arranged after review; no pickup is confirmed yet.</p>
+
+                    <div class="book-form-row">
+                        <div class="book-field">
+                            <label>Preferred pickup time</label>
+                            <select name="pickup_time">
+                                <option value="">Select time preference</option>
+                                <option value="Morning">Morning (8:00 AM - 12:00 PM)</option>
+                                <option value="Afternoon">Afternoon (1:00 PM - 5:00 PM)</option>
+                            </select>
+                        </div>
+                        <div class="book-field">
+                            <label>Preferred return time</label>
+                            <select name="return_time">
+                                <option value="">Select time preference</option>
+                                <option value="Morning">Morning (8:00 AM - 12:00 PM)</option>
+                                <option value="Afternoon">Afternoon (1:00 PM - 5:00 PM)</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="book-form-row">
+                        <div class="book-field">
+                            <label>Contact name *</label>
+                            <input type="text" name="contact_name" placeholder="Enter your name" required>
+                        </div>
+                        <div class="book-field">
+                            <label>Email address *</label>
+                            <input type="email" name="email" placeholder="Enter email address" required>
+                        </div>
+                    </div>
+
+                    <div class="book-field">
+                        <label>Mobile number *</label>
+                        <input type="text" name="mobile" placeholder="Enter mobile number" required>
+                    </div>
+                </section>
+            </div>
+
+            <aside class="book-sidebar">
+                <div class="book-plan-card">
+                    <span class="book-status-tag">Rental request · not confirmed</span>
+                    <h2 class="book-plan-title">Your rental plan.</h2>
+
+                    <div class="book-img-preview">
+                        <img id="sideCamImg" src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&q=80&w=600" alt="Camera">
+                    </div>
+
+                    <h3 id="sideCamTitle" class="book-cam-name">Sony ZV-E10</h3>
+
+                    <div class="book-summary-row"><span>Pickup</span><strong id="sidePickup">Not selected</strong></div>
+                    <div class="book-summary-row"><span>Return</span><strong id="sideReturn">Not selected</strong></div>
+                    <div class="book-summary-row"><span>Duration</span><strong id="sideDuration">0 days</strong></div>
+
+                    <div class="book-summary-block">
+                        <span>Included kit</span>
+                        <p id="sideKitInclusions">Unit, lanyard, silicone cover, charger, bag, 64 GB card</p>
+                    </div>
+
+                    <div class="book-summary-block">
+                        <span>Optional add-ons requested</span>
+                        <p id="sideAddons">None selected</p>
+                    </div>
+
+                    <div class="book-divider"></div>
+
+                    <div class="book-rate-tier-info">
+                        <strong>Published rate tiers — <span id="tierCamName">Sony ZV-E10</span></strong>
+                        <p id="tierBreakdown">₱549/day (1–3 days) · ₱499/day (1–6 days) · ₱449/day (1–7 days or more)</p>
+                        <small>Day ranges shown as published; confirm the applicable tier when booking.</small>
+                    </div>
+
+                    <div class="book-divider"></div>
+
+                    <div class="book-summary-row"><span>Rate applied (illustrative)</span><strong id="sideRateApplied">₱0</strong></div>
+                    <div class="book-summary-row"><span>Rental subtotal</span><strong id="sideSubtotal">₱0.00</strong></div>
+                    <div class="book-summary-row"><span>Optional add-ons</span><strong>Pending confirmation</strong></div>
+
+                    <div class="book-summary-row book-total-row"><span>Base total (excl. add-ons)</span><strong id="sideBaseTotal">₱0.00</strong></div>
+
+                    <div class="book-downpayment-box">
+                        <div class="dp-header">50% downpayment, then the balance</div>
+                        <div class="dp-row"><span>Downpayment (50%)</span><strong id="sideDP">₱0.00</strong></div>
+                        <div class="dp-row"><span>Remaining balance (50%)</span><strong id="sideBalance">₱0.00</strong></div>
+                        <p class="dp-note">Base rental estimate only. Accessories outside the confirmed kit require separate confirmation. Not approved or paid.</p>
+                    </div>
+
+                    <div class="book-terms-group">
+                        <input type="checkbox" id="termsCheck" name="terms_acknowledged" value="1" required>
+                        <label for="termsCheck">I understand this is a request, subject to availability, identity review, and final rental terms.</label>
+                    </div>
+
+                    <button type="submit" class="book-submit-btn">Submit rental request <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+
+                    <a href="customer_guidelines.html" class="book-guidelines-link">Review rental guidelines <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.7rem;"></i></a>
+                </div>
+            </aside>
+        </form>
+    </main>
+
+    <div class="cta-banner">
+        <div>
+            <div class="sub-heading dark-sub">READY FOR YOUR NEXT SHOOT?</div>
+            <h2>Request a quote.</h2>
+        </div>
+        <a href="#bookingMainForm" class="btn-quote inline-btn">Request a quote <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <h3>Halo Angel Camera Rental</h3>
+                <p>Sony, DJI, Insta360, and Instax rentals.<br>Palo Alto, Calamba, Laguna.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Explore</h4>
+                <a href="catalog.html">Catalog</a>
+                <a href="booking.html">Booking</a>
+                <a href="customer_dashboard.html">Account</a>
+                <a href="home.html#about">Guidelines</a>
+            </div>
+            <div class="footer-links">
+                <h4>About</h4>
+                <a href="about_us.html#about">About Halo Angel</a>
+                <a href="about_us.html#contact">Palo Alto, Calamba, Laguna</a>
+                <a href="about_us.html#contact">Contact</a>
+            </div>
+            <div class="footer-links">
+                <h4>Pathways</h4>
+                <a href="customer_dashboard.html#verification">Identity verification</a>
+                <a href="customer_dashboard.html#bookings">Booking status</a>
+                <a href="customer_guidelines.html#camera-instructions">Camera instructions</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>© 2026 Halo Angel Camera Rental. Palo Alto, Calamba, Laguna.</span>
+            <div class="legal-links">
+                <a href="customer_guidelines.html#rental-guidelines">Privacy policy</a>
+                <a href="customer_guidelines.html">Guidelines</a>
+                <a href="about_us.html#about">About</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

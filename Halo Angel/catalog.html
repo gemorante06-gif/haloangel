@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en" class="rental-page">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halo Angel Camera Rental</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="rental-page">
+
+    <header class="navbar">
+        <div class="logo">
+            <img src="image/OfficialLogo.png" alt="Halo Angel Logo" class="logo-img">
+            <span>Halo Angel Camera Rental</span>
+        </div>
+        <nav class="nav-links">
+            <a href="catalog.html" class="active">Catalog</a>
+            <a href="booking.html">Booking</a>
+            <a href="customer_dashboard.html">Account</a>
+            <a href="customer_guidelines.html">Guidelines</a>
+        </nav>
+        <div class="nav-actions">
+            <a class="icon-btn" href="#searchInput" aria-label="Search cameras"><i class="fa-solid fa-magnifying-glass"></i></a>
+            <a href="login.html" class="auth-link">Log in</a>
+            <a href="registration.php" class="auth-link">Register</a>
+            <a href="booking.html#bookingMainForm" class="cart-btn rental-bag-link" aria-label="Rental bag and booking"><img class="rental-bag-icon" src="image/shopping-bag.png" alt=""> <span>Rental bag</span></a>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="breadcrumb">Home / Services & Catalog</div>
+        <div class="sub-heading">THE HALO ANGEL CATALOG</div>
+        <h1 class="page-title">Find your next setup.</h1>
+        <p class="subtitle">From everyday stories to all-around adventures. Explore six camera models and request a quote for the gear, dates, and accessories you need.</p>
+
+        <div class="controls-bar">
+            <div class="search-box">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" id="searchInput" placeholder="Search cameras, brands, or creative needs">
+            </div>
+            <div class="info-meta">
+                <span>6 camera models</span>
+                <span>Rates per day</span>
+            </div>
+        </div>
+
+        <div class="filter-tags">
+            <button class="tag active" data-filter="all">All cameras</button>
+            <button class="tag" data-filter="Sony">Sony</button>
+            <button class="tag" data-filter="DJI">DJI</button>
+            <button class="tag" data-filter="Insta360">Insta360</button>
+            <button class="tag" data-filter="Instax">Instax</button>
+        </div>
+
+        <div class="catalog-grid" id="catalogGrid">
+            
+            <div class="card" data-brand="Sony">
+                <div class="card-img-wrap">
+                    <img src="image/SONY ZVE10.png" alt="Sony ZV-E10">
+                </div>
+                <div class="card-content">
+                    <span class="card-category">MIRRORLESS CAMERA</span>
+                    <h2 class="card-title">Sony ZV-E10</h2>
+                    <div class="card-specs">24.2MP APS-C / 4K30</div>
+                    <p class="card-desc">For creator videos, portraits, and everyday storytelling with interchangeable-lens flexibility.</p>
+                    
+                    <div class="section-label">Rental rates - per day</div>
+                    <div class="rates-list">
+                        <div class="rate-row"><span>₱549 / day</span><span>1–3 days</span></div>
+                        <div class="rate-row"><span>₱499 / day</span><span>1–6 days</span></div>
+                        <div class="rate-row"><span>₱449 / day</span><span>1–7 days or more</span></div>
+                    </div>
+                    <p class="disclaimer">Day ranges shown as published; confirm the applicable tier when booking.</p>
+
+                    <div class="section-label">Inclusions</div>
+                    <p class="inclusions-text">Sony ZV-E10 unit · lanyard · silicone cover · adapter charger · camera bag · 64 GB memory card</p>
+
+                    <div class="preview-box">
+                        <i class="fa-regular fa-circle-play"></i>
+                        <div>
+                            <strong>Sample-footage preview</strong><br>
+                            <span>Placeholder only - no video asset supplied</span>
+                        </div>
+                    </div>
+
+                    <button class="btn-quote" data-camera="Sony ZV-E10">Request a quote <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+                </div>
+            </div>
+
+            <div class="card" data-brand="DJI">
+                <div class="card-img-wrap">
+                    <img src="image/POCKET3.png" alt="DJI Osmo Pocket 3 Creator Combo">
+                </div>
+                <div class="card-content">
+                    <span class="card-category">HANDHELD GIMBAL CAMERA</span>
+                    <h2 class="card-title">DJI Osmo Pocket 3 Creator Combo</h2>
+                    <div class="card-specs">1-inch sensor / 3-axis gimbal / 4K120 slow motion</div>
+                    <p class="card-desc">A compact companion for smooth walk-and-talk videos, travel diaries, and behind-the-scenes moments.</p>
+                    
+                    <div class="section-label">Rental rates - per day</div>
+                    <div class="rates-list">
+                        <div class="rate-row"><span>₱549 / day</span><span>1–3 days</span></div>
+                        <div class="rate-row"><span>₱499 / day</span><span>1–6 days</span></div>
+                        <div class="rate-row"><span>₱449 / day</span><span>1–7 days or more</span></div>
+                    </div>
+                    <p class="disclaimer">Day ranges shown as published; confirm the applicable tier when booking.</p>
+
+                    <div class="section-label">Inclusions</div>
+                    <p class="inclusions-text">Osmo Pocket 3 unit · lanyard · silicone cover · charger · camera bag · mini tripod · 64 GB memory card</p>
+
+                    <div class="preview-box">
+                        <i class="fa-regular fa-circle-play"></i>
+                        <div>
+                            <strong>Sample-footage preview</strong><br>
+                            <span>Placeholder only - no video asset supplied</span>
+                        </div>
+                    </div>
+
+                    <button class="btn-quote" data-camera="DJI Osmo Pocket 3 Creator Combo">Request a quote <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+                </div>
+            </div>
+
+            <div class="card" data-brand="DJI">
+                <div class="card-img-wrap">
+                    <img src="image/ACTIONPOCKET4.png" alt="DJI Osmo Action 4">
+                </div>
+                <div class="card-content">
+                    <span class="card-category">ACTION CAMERA</span>
+                    <h2 class="card-title">DJI Osmo Action 4</h2>
+                    <div class="card-specs">1/1.3-inch sensor / 4K120</div>
+                    <p class="card-desc">Capture a new perspective on movement, outdoor adventures, and point-of-view storytelling.</p>
+                    
+                    <div class="section-label">Rental rates - per day</div>
+                    <div class="rates-list">
+                        <div class="rate-row"><span>₱499 / day</span><span>1–3 days</span></div>
+                        <div class="rate-row"><span>₱449 / day</span><span>1–6 days</span></div>
+                        <div class="rate-row"><span>₱399 / day</span><span>1–7 days or more</span></div>
+                    </div>
+                    <p class="disclaimer">Day ranges shown as published; confirm the applicable tier when booking.</p>
+
+                    <div class="section-label">Inclusions</div>
+                    <p class="inclusions-text">Osmo Action 4 · protective frame · quick-release adapter mount · lock screw · USB-C cable · protective pouch · lens cloth</p>
+
+                    <div class="preview-box">
+                        <i class="fa-regular fa-circle-play"></i>
+                        <div>
+                            <strong>Sample-footage preview</strong><br>
+                            <span>Placeholder only - no video asset supplied</span>
+                        </div>
+                    </div>
+
+                    <button class="btn-quote" data-camera="DJI Osmo Action 4">Request a quote <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+                </div>
+            </div>
+
+            <div class="card" data-brand="Insta360">
+                <div class="card-img-wrap">
+                    <img src="image/X360.png" alt="Insta360 X5">
+                </div>
+                <div class="card-content">
+                    <span class="card-category">360 CAMERA</span>
+                    <h2 class="card-title">Insta360 X5</h2>
+                    <div class="card-specs">8K30 video</div>
+                    <p class="card-desc">Record every direction and explore creative reframing for immersive travel and action stories.</p>
+                    
+                    <div class="section-label">Rental rates - per day</div>
+                    <div class="rates-list">
+                        <div class="rate-row"><span>₱549 / day</span><span>1–3 days</span></div>
+                        <div class="rate-row"><span>₱499 / day</span><span>1–6 days</span></div>
+                        <div class="rate-row"><span>₱449 / day</span><span>1–7 days or more</span></div>
+                    </div>
+                    <p class="disclaimer">Day ranges shown as published; confirm the applicable tier when booking.</p>
+
+                    <div class="section-label">Inclusions</div>
+                    <p class="inclusions-text">Insta360 X5 · USB-C cable · protective pouch · lens cloth</p>
+
+                    <div class="preview-box">
+                        <i class="fa-regular fa-circle-play"></i>
+                        <div>
+                            <strong>Sample-footage preview</strong><br>
+                            <span>Placeholder only - no video asset supplied</span>
+                        </div>
+                    </div>
+
+                    <button class="btn-quote" data-camera="Insta360 X5">Request a quote <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+                </div>
+            </div>
+
+            <div class="card" data-brand="Instax">
+                <div class="card-img-wrap">
+                    <img src="image/MINIEVO.png" alt="Fujifilm Instax Mini Evo">
+                </div>
+                <div class="card-content">
+                    <span class="card-category">INSTANT PHOTOGRAPHY</span>
+                    <h2 class="card-title">Fujifilm Instax Mini Evo</h2>
+                    <div class="card-specs">Instant film prints · credit-card-size format</div>
+                    <p class="card-desc">Make moments tangible at gatherings, celebrations, and creative shoots. Film is not included — see the add-on below.</p>
+                    
+                    <div class="section-label">Rental rates - per day</div>
+                    <div class="rates-list">
+                        <div class="rate-row"><span>₱299 / day</span><span>1–3 days</span></div>
+                        <div class="rate-row"><span>₱249 / day</span><span>1–7 days or more</span></div>
+                    </div>
+                    <p class="disclaimer">Day ranges shown as published; confirm the applicable tier when booking.</p>
+
+                    <div class="section-label">Inclusions</div>
+                    <p class="inclusions-text">Instax Mini Evo camera · tempered glass · clear case · lens protector · lanyard</p>
+
+                    <div class="addon-box">
+                        <i class="fa-solid fa-film"></i>
+                        <div>
+                            Film add-on - ₱599 / 10 sheets<br>
+                            <small style="color:#666;">Instax Mini film — required for printing; quoted separately</small>
+                        </div>
+                    </div>
+
+                    <div class="preview-box">
+                        <i class="fa-regular fa-circle-play"></i>
+                        <div>
+                            <strong>Sample results preview</strong><br>
+                            <span>Placeholder only - no sample images supplied</span>
+                        </div>
+                    </div>
+
+                    <button class="btn-quote" data-camera="Fujifilm Instax Mini Evo">Request a quote <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+                </div>
+            </div>
+
+            <div class="card" data-brand="Instax">
+                <div class="card-img-wrap">
+                    <img src="image/SQ6.png" alt="Fujifilm Instax SQ6">
+                </div>
+                <div class="card-content">
+                    <span class="card-category">INSTANT PHOTOGRAPHY</span>
+                    <h2 class="card-title">Fujifilm Instax SQ6</h2>
+                    <div class="card-specs">Instant square prints · square format</div>
+                    <p class="card-desc">Square-format instant photography for portraits, gatherings, and creative keepsakes. Film is not included — see the add-on below.</p>
+                    
+                    <div class="section-label">Rental rates - per day</div>
+                    <div class="rates-list">
+                        <div class="rate-row"><span>₱299 / day</span><span>1–3 days</span></div>
+                        <div class="rate-row"><span>₱249 / day</span><span>1–7 days or more</span></div>
+                    </div>
+                    <p class="disclaimer">Day ranges shown as published; confirm the applicable tier when booking.</p>
+
+                    <div class="section-label">Inclusions</div>
+                    <p class="inclusions-text">Instax SQ6 · lanyard</p>
+
+                    <div class="addon-box">
+                        <i class="fa-solid fa-film"></i>
+                        <div>
+                            Film add-on - ₱599 / 10 sheets<br>
+                            <small style="color:#666;">Instax Square film — required for printing; quoted separately</small>
+                        </div>
+                    </div>
+
+                    <div class="preview-box">
+                        <i class="fa-regular fa-circle-play"></i>
+                        <div>
+                            <strong>Sample results preview</strong><br>
+                            <span>Placeholder only - no sample images supplied</span>
+                        </div>
+                    </div>
+
+                    <button class="btn-quote" data-camera="Fujifilm Instax SQ6">Request a quote <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+                </div>
+            </div>
+
+        </div>
+
+        <section class="help-section">
+            <span class="help-tag">A LITTLE HELP WITH YOUR KIT</span>
+            <h2>One idea.<br>The right camera.</h2>
+            <p class="help-desc">Not sure which setup fits? Tell us what you are filming, where you are going, and your preferred dates. Include your questions in a quote request.</p>
+
+            <div class="steps-list">
+                <div class="step-item">
+                    <span class="step-num">01</span>
+                    <div>
+                        <strong>Choose a camera</strong>
+                        <p>Compare the headline specs and intended use above.</p>
+                    </div>
+                </div>
+                <div class="step-item">
+                    <span class="step-num">02</span>
+                    <div>
+                        <strong>Plan your kit</strong>
+                        <p>Ask about accessories and confirm the final inclusions.</p>
+                    </div>
+                </div>
+                <div class="step-item">
+                    <span class="step-num">03</span>
+                    <div>
+                        <strong>Request your dates</strong>
+                        <p>Availability and the final quote are confirmed after review.</p>
+                    </div>
+                </div>
+            </div>
+
+            <a href="booking.html" class="btn-quote inline-btn">Request a quote <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            <p class="disclaimer footer-disclaimer">Product imagery is for reference. Rates and inclusions follow the supplied cards; day ranges are shown as published. Confirm the applicable tier and availability when booking.</p>
+        </section>
+    </main>
+
+    <div class="cta-banner">
+        <div>
+            <div class="sub-heading dark-sub">READY FOR YOUR NEXT SHOOT?</div>
+            <h2>Request a quote.</h2>
+        </div>
+        <a href="booking.html" class="btn-quote inline-btn">Request a quote <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <h3>Halo Angel Camera Rental</h3>
+                <p>Sony, DJI, Insta360, and Instax rentals.<br>Palo Alto, Calamba, Laguna.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Explore</h4>
+                <a href="catalog.html">Catalog</a>
+                <a href="booking.html">Booking</a>
+                <a href="customer_dashboard.html">Account</a>
+                <a href="customer_guidelines.html">Guidelines</a>
+            </div>
+            <div class="footer-links">
+                <h4>About</h4>
+                <a href="about_us.html#about">About Halo Angel</a>
+                <a href="about_us.html#contact">Palo Alto, Calamba, Laguna</a>
+                <a href="about_us.html#contact">Contact</a>
+            </div>
+            <div class="footer-links">
+                <h4>Pathways</h4>
+                <a href="customer_dashboard.html#verification">Identity verification</a>
+                <a href="customer_dashboard.html#bookings">Booking status</a>
+                <a href="customer_guidelines.html#camera-instructions">Camera instructions</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>© 2026 Halo Angel Camera Rental. Palo Alto, Calamba, Laguna.</span>
+            <div class="legal-links">
+                <a href="customer_guidelines.html#rental-guidelines">Privacy policy</a>
+                <a href="customer_guidelines.html">Guidelines</a>
+                <a href="about_us.html#about">About</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

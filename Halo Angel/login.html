@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en" class="login-page">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Log In - Halo Angel Camera Rental</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body class="login-page">
+    <!-- Top Header Navigation -->
+    <header class="top-nav">
+      <div class="nav-container">
+        <a href="home.html" class="logo-brand">
+          <div class="logo-icon"><i class="fa-solid fa-camera-retro"></i></div>
+          <span class="brand-name">Halo Angel Camera Rental</span>
+        </a>
+
+        <nav class="main-menu">
+          <a href="catalog.html">Explore cameras</a>
+          <a href="booking.html">Rentals</a>
+          <a href="about_us.html#about">About</a>
+          <a href="customer_guidelines.html#support">Help</a>
+        </nav>
+
+        <div class="user-actions">
+          <a class="search-btn" href="catalog.html#searchInput" aria-label="Search cameras">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </a>
+          <a href="login.html" class="login-link active">Log in</a>
+          <a href="registration.php" class="create-account-link">Register</a>
+          <a href="booking.html#bookingMainForm" class="cart-btn rental-bag-link" aria-label="Rental bag and booking"
+            ><img class="rental-bag-icon" src="image/shopping-bag.png" alt="" /> <span>Rental bag</span></a
+          >
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Login Grid Container -->
+    <main class="login-page-container">
+      <!-- Left Hero Brand Panel -->
+      <section class="left-hero-panel">
+        <div class="hero-header-badge">
+          <i class="fa-solid fa-location-dot"></i>
+          <span>PALO ALTO, CALAMBA, LAGUNA</span>
+        </div>
+
+        <div class="hero-title-group">
+          <h1>Your next shot.<br />Starts here.</h1>
+          <p>
+            A familiar setup. A fresh idea. Log in to Halo Angel Camera Rental
+            and pick up where your inspiration left off.
+          </p>
+        </div>
+
+        <!-- Featured Camera Card Preview -->
+        <div class="camera-card-preview">
+          <div class="camera-img-box">
+            <img src="image/POCKET3.png" alt="DJI Osmo Pocket 3" />
+          </div>
+          <div class="card-caption">
+            <div class="caption-text">
+              <h3>DJI Osmo Pocket 3</h3>
+              <p>
+                A little inspiration for your next shoot in Palo Alto, Calamba,
+                Laguna.
+              </p>
+            </div>
+            <a href="catalog.html" class="view-gear-btn"
+              >View gear <i class="fa-solid fa-arrow-up-right-from-square"></i
+            ></a>
+          </div>
+        </div>
+
+        <!-- Guarantee Tag -->
+        <div class="guarantee-tag">
+          <div class="check-icon">
+            <i class="fa-regular fa-circle-check"></i>
+          </div>
+          <div class="guarantee-info">
+            <strong>Ready for your next shoot.</strong>
+            <span>Halo Angel Camera Rental in Palo Alto, Calamba, Laguna.</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Right Login Form Panel -->
+      <section class="right-form-panel">
+        <div class="form-wrapper">
+          <span class="sub-badge">SECURE ACCESS</span>
+          <h2>Log in to Halo Angel.</h2>
+          <p class="form-description">
+            Log in to Halo Angel Camera Rental to manage your rentals and find
+            your next setup.
+          </p>
+
+          <form class="login-form">
+            <div class="input-group">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                placeholder="you@example.com"
+                required
+              />
+            </div>
+
+            <div class="input-group">
+              <label for="password">Password</label>
+              <div class="password-input-wrapper">
+                <input
+                  type="password"
+                  id="password"
+                  placeholder="Enter password"
+                  required
+                />
+                <button type="button" class="toggle-password">
+                  <i class="fa-regular fa-eye"></i>
+                </button>
+              </div>
+            </div>
+
+            <div class="form-options">
+              <label class="remember-me">
+                <input type="checkbox" />
+                <span>Remember me</span>
+              </label>
+              <a href="about_us.html#contact" class="forgot-pass">Need help signing in?</a>
+            </div>
+
+            <button type="submit" class="submit-btn">
+              Log in <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </form>
+
+          <div class="form-footer-links">
+            <p>
+              New to Halo Angel?
+              <a href="registration.php" class="create-account-link"
+                >Create an account
+                <i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </p>
+            <p class="help-text">
+              Need help signing in? Our team is here to help.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Bottom Page Footer -->
+    <footer class="login-footer">
+      <div class="footer-inner">
+        <span class="copyright"
+          >© 2026 Halo Angel Camera Rental. Palo Alto, Calamba, Laguna.</span
+        >
+        <div class="footer-nav">
+          <a href="customer_guidelines.html#rental-guidelines">Privacy policy</a>
+          <a href="customer_guidelines.html">Rental terms</a>
+          <a href="about_us.html#contact"
+            >Need a hand? Contact us
+            <i class="fa-solid fa-arrow-up-right-from-square"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

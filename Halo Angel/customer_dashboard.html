@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en" class="customer-dashboard-page">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="View your Halo Angel account, camera bookings, and payments."
+    />
+    <title>Account | Halo Angel Camera Rental</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="customer-dashboard-page" data-dashboard-endpoint="">
+    <header class="site-header">
+      <div class="nav-container">
+        <a class="logo-brand" href="home.html" aria-label="Halo Angel home">
+          <span class="logo-icon">
+            <img class="logo-img" src="image/OfficialLogo.png" alt="" />
+          </span>
+          <span>Halo Angel Camera Rental</span>
+        </a>
+        <nav class="main-menu" aria-label="Main navigation">
+          <a href="catalog.html">Catalog</a>
+          <a href="booking.html">Booking</a>
+          <a href="customer_dashboard.html" aria-current="page">Account</a>
+          <a href="customer_guidelines.html">Guidelines</a>
+        </nav>
+        <div class="user-actions">
+          <a class="rental-bag-link" href="booking.html#bookingMainForm" aria-label="Rental bag and booking"><img class="rental-bag-icon" src="image/shopping-bag.png" alt="" /><span>Rental bag</span></a>
+          <a class="search-btn" href="catalog.html#searchInput" aria-label="Search cameras">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="10.8" cy="10.8" r="7.2" />
+              <path d="m16.2 16.2 4.3 4.3" />
+            </svg>
+          </a>
+          <a class="login-link" href="login.html" data-account-link>My account</a>
+          <a class="signup-btn" href="registration.php" aria-label="Create account">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="8" r="3.5" />
+              <path d="M5 20c0-3.5 2.8-6 7-6s7 2.5 7 6" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <section class="welcome-banner" aria-labelledby="welcome-title">
+      <nav class="breadcrumbs" aria-label="Breadcrumb">
+        <a href="home.html">Home</a><span>/</span><span>Account</span><span>/</span><span>Overview</span>
+      </nav>
+      <p class="eyebrow">YOUR CREATIVE WORKSPACE</p>
+      <h1 id="welcome-title" data-welcome-message>Welcome, creator.</h1>
+      <p class="welcome-copy" data-welcome-copy>
+        Keep your rental plans, verification, and payment progress in one place.
+      </p>
+    </section>
+
+    <main class="page-content">
+      <nav class="dashboard-tabs" aria-label="Account sections">
+        <a href="#overview" aria-current="page">Overview</a>
+        <a href="#bookings">My bookings</a>
+        <a href="#verification">Identity verification</a>
+        <a href="#account-settings">Account settings</a>
+        <span class="tabs-note" data-dashboard-note></span>
+      </nav>
+
+      <section class="account-summary" id="overview" aria-label="Account summary">
+        <article class="summary-card">
+          <span>Rental status</span>
+          <strong data-rental-status></strong>
+          <p data-rental-status-note></p>
+        </article>
+        <article class="summary-card" id="verification">
+          <span>Identity verification</span>
+          <strong data-verification-status></strong>
+          <p data-verification-note></p>
+        </article>
+        <article class="summary-card">
+          <span>Payment progress</span>
+          <strong data-payment-status></strong>
+          <p data-payment-note></p>
+        </article>
+      </section>
+
+      <section class="booking-layout" id="bookings">
+        <article class="panel booking-panel">
+          <div class="panel-heading">
+            <h2 data-booking-heading></h2>
+            <span class="status-badge" data-booking-badge hidden></span>
+          </div>
+          <div class="booking-content" data-booking-content hidden>
+            <img class="booking-image" data-booking-image alt="" hidden />
+            <div class="booking-description">
+              <p data-booking-id></p>
+              <h3 data-booking-camera></h3>
+              <p class="booking-facts" data-booking-dates></p>
+              <p class="booking-facts" data-booking-description></p>
+            </div>
+          </div>
+          <dl class="booking-details" data-booking-details hidden>
+            <div><dt>Rental status</dt><dd data-booking-status></dd></div>
+            <div><dt>Approval</dt><dd data-booking-approval></dd></div>
+            <div><dt>Pickup / return</dt><dd data-booking-pickup></dd></div>
+          </dl>
+          <div class="booking-empty" data-booking-empty aria-live="polite"></div>
+          <div class="form-actions" data-booking-actions hidden>
+            <a class="secondary-button" href="login.html" data-request-link hidden>View request ↗</a>
+            <a class="secondary-button" href="login.html" data-change-link hidden>Request a change ↗</a>
+          </div>
+        </article>
+
+        <aside class="panel steps-panel">
+          <p class="eyebrow">WHAT HAPPENS NEXT</p>
+          <h2>A little closer to your next shoot.</h2>
+          <ol class="steps-list">
+            <li>
+              <span class="step-number">01</span>
+              <div><strong>Complete your KYC</strong><p>Identity verification steps will appear here when available.</p></div>
+            </li>
+            <li>
+              <span class="step-number">02</span>
+              <div><strong>Wait for approval</strong><p>Booking approval updates will appear here.</p></div>
+            </li>
+            <li>
+              <span class="step-number">03</span>
+              <div><strong>Settle the balance</strong><p>Payment instructions will appear when provided.</p></div>
+            </li>
+          </ol>
+          <a class="primary-button" href="login.html" data-verification-link hidden>
+            Continue verification <span aria-hidden="true">↗</span>
+          </a>
+        </aside>
+      </section>
+
+      <section class="panel payment-panel" aria-labelledby="payment-heading">
+        <div class="panel-heading">
+          <h2 id="payment-heading">Your payment, at a glance.</h2>
+          <span class="status-badge" data-payment-badge hidden></span>
+        </div>
+        <div class="payment-grid">
+          <div class="payment-item"><span>Rental total</span><strong data-payment-total></strong><p data-payment-total-note></p></div>
+          <div class="payment-item"><span>Downpayment</span><strong data-payment-deposit></strong><p data-payment-deposit-note></p></div>
+          <div class="payment-item"><span>Remaining balance</span><strong data-payment-balance></strong><p data-payment-balance-note></p></div>
+        </div>
+        <div class="payment-track" aria-hidden="true"><span data-payment-progress></span></div>
+        <a class="inline-link" href="login.html" data-payment-link hidden>View payment details ↗</a>
+      </section>
+
+      <section class="rental-history" aria-labelledby="history-heading">
+        <div class="section-heading">
+          <h2 id="history-heading">Rental history.</h2>
+          <a class="inline-link" href="#history-heading" data-history-link hidden>All bookings ↗</a>
+        </div>
+        <div class="history-scroll">
+          <table class="history-table">
+            <thead>
+              <tr><th>Equipment</th><th>Rental dates</th><th>Rental status</th><th>Payment</th></tr>
+            </thead>
+            <tbody data-history-body>
+              <tr><td class="history-empty" colspan="4"></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="account-panels" id="account-settings">
+        <article class="account-panel">
+          <h2>Account details.</h2>
+          <form data-account-form>
+            <div class="field-grid">
+              <div class="field full"><label for="account-name">Display name</label><input id="account-name" name="name" autocomplete="name" readonly /></div>
+              <div class="field full"><label for="account-email">Email address</label><input id="account-email" name="email" type="email" autocomplete="email" readonly /></div>
+              <div class="field full"><label for="account-phone">Mobile number</label><input id="account-phone" name="phone" type="tel" autocomplete="tel" readonly /></div>
+            </div>
+            <div class="form-actions">
+              <button class="secondary-button" type="submit" data-save-account disabled>Save account details ↗</button>
+              <a class="inline-link" href="login.html" data-sign-out hidden>Sign out ↗</a>
+            </div>
+          </form>
+        </article>
+        <article class="account-panel">
+          <h2>Password &amp; access.</h2>
+          <form data-password-form>
+            <div class="field-grid">
+              <div class="field full"><label for="current-password">Current password</label><input id="current-password" name="currentPassword" type="password" autocomplete="current-password" disabled /></div>
+              <div class="field"><label for="new-password">New password</label><input id="new-password" name="newPassword" type="password" autocomplete="new-password" disabled /></div>
+              <div class="field"><label for="confirm-password">Confirm password</label><input id="confirm-password" name="confirmPassword" type="password" autocomplete="new-password" disabled /></div>
+            </div>
+            <p class="panel-note">Password changes will be available when account services are connected.</p>
+            <button class="secondary-button" type="submit" disabled>Update password ↗</button>
+          </form>
+        </article>
+      </section>
+    </main>
+
+    <footer class="dark-footer">
+      <section class="footer-cta">
+        <div><p class="eyebrow">READY FOR YOUR NEXT SHOOT?</p><h2>Request a quote.</h2></div>
+        <a class="primary-button" href="booking.html">Request a quote <span aria-hidden="true">↗</span></a>
+      </section>
+      <div class="footer-links">
+        <div><h3>Halo Angel Camera Rental</h3><p>Sony, DJI, Insta360, and Instax rentals.<br />Palo Alto, Calamba, Laguna.</p></div>
+        <div class="footer-column"><strong>Explore</strong><a href="catalog.html">Catalog</a><a href="booking.html">Booking</a><a href="customer_dashboard.html">Account</a><a href="customer_guidelines.html">Guidelines</a></div>
+        <div class="footer-column"><strong>About</strong><a href="about_us.html#about">About Halo Angel</a><a href="about_us.html#contact">Palo Alto, Calamba, Laguna</a><a href="about_us.html#contact">Contact</a></div>
+        <div class="footer-column"><strong>Pathways</strong><a href="verification.html">Identity verification</a><a href="#bookings">Booking status</a><a href="customer_guidelines.html#camera-instructions">Camera instructions</a></div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Halo Angel Camera Rental. Palo Alto, Calamba, Laguna.</span>
+        <span><a href="home.html#about">Privacy policy</a>　<a href="customer_guidelines.html">Guidelines</a>　<a href="about_us.html#about">About</a></span>
+      </div>
+    </footer>
+
+    <script src="customer-dashboard.js" defer></script>
+  </body>
+</html>
